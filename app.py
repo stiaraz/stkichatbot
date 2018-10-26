@@ -34,7 +34,7 @@ app = Flask(__name__)
 # change channel_secret and channel_access_token from your line developer
 
 
-line_bot_api = LineBotApi(channel_access_token)
+line_bot_api = LineBotApi('WiIIuAeFqTzc3LhHWxYSUkNb+75ClBlaS/JRijwdG4e17cVIwHc03YXk6wo2UhPL0Vg/Hy1zJSYUlMyERtCKj2Vo0vJXEc2wSrtK9M5aBGXSSy08qxfUgAN9QFA+RAQT+xSPHBXtE15Yo3/Z2OT5HwdB04t89/1O/w1cDnyilFU=')
 handler = WebhookHandler('d6a9e130122657781d03fc69482a50bb')
 
 static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
