@@ -73,8 +73,8 @@ def handle_text_message(event):
     if(question == 'Hai'):
         line_bot_api.reply_message(event.reply_token, TextSendMessage(text='Halo'))
     else:
-    answer = request_api(question)
-    line_bot_api.reply_message(event.reply_token, TextSendMessage(text=answer))
+        answer = request_api(question)
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=answer))
 
 def request_api(question):
     url = api_url + api_port + api_route
